@@ -1,0 +1,48 @@
+# Site settings
+title: Expanding HL7 FHIR to Support Chronic Disease Registries
+email: marc.natter@childrens.harvard.edu
+description: >
+  FDA 21 CFR Part 11 Implementation for FHIR
+lang: en-US
+
+baseurl: "/docs" # the subpath of your site, e.g. /blog/
+url: https://chb.github.io/fhir21cfr11 # the base hostname & protocol for your site
+git_address: https://github.com/chb/21cfr11pro-ig
+git_edit_address: https://github.com/chb/fhir21cfr11/docs
+
+# theme options from https://bootswatch.com/3/
+# comment out this to use default Bootstrap
+bootwatch: paper # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+# Plugins (previously gems:)
+plugins:
+#  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .gitignore
+  - README.md
+  - vendor
+timezone: America/New York
+defaults:
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: docs
+    sectionid: docs
+    seo:
+      type: "WebPage"
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
