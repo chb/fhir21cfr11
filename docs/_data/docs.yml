@@ -1,7 +1,10 @@
 - title: Overview
   docs:
   - home
+  - acknowledgements
 - title: Implementation resources
   docs:
   - 21CFR11-FHIR-implementation_whitepaper
   - implementation-guide
+  - example-source-code
+  
