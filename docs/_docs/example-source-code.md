@@ -7,9 +7,13 @@ Below are links and documentation for a full example deployment of a demonstrati
 
 ## Source
 
-The example FHIR 21CFR11 PRO IG implementation server is available here: <https://bitbucket.org/ihlchip/hapi-fhir-jpaserver-oauth-21cfr11/src/master/>. The Keycloak Auth server <https://bitbucket.org/ihlchip/keycloak-auth-bch> is built into the local docker repository and run in the docker-compose instance by the docker-compose.yaml script in <https://bitbucket.org/ihlchip/hapi-fhir-jpaserver-oauth-21cfr11>. The docker-compose file also executes a job that provisions a test realm and user for client testing. 
+The example FHIR 21CFR11 PRO IG implementation server is available here: 
 
-Client interactions with the 21CFR11-compliant server are demonstrated with a command-line client available from <https://bitbucket.org/ihlchip/fhir-21cfr11pro-client-example>  
+ * <https://github.com/chb/hapi-fhir-jpaserver-oauth-21cfr11>. 
+
+The Keycloak Auth server <https://github.com/chb/keycloak-auth-bch> is built into the local docker repository and run in the docker-compose instance by the docker-compose.yaml script in <https://github.com/chb/hapi-fhir-jpaserver-oauth-21cfr11>. The docker-compose file also executes a job that provisions a test realm and user for client testing. 
+
+Client interactions with the 21CFR11-compliant server are demonstrated with a command-line client available from <https://github.com/chb/fhir-21cfr11pro-client-example>  
 
 ## Context
 
